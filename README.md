@@ -9,7 +9,7 @@ A React experiment, where we:
   testing mode (as a unit test).
 
 Please do try the app at my blog link below, or at this codesandbox url:
-https://codesandbox.io/s/in-browser-feed-item-view-duration-tracking-using-intersection-observer-zxgi7
+[https://codesandbox.io/s/in-browser-feed-item-view-duration-tracking-using-intersection-observer-zxgi7]
 
 It's kind of fun. Also, this was interesting to test. I could not approach this
 using TDD easily, because regular tools don't support real layout, so you can't
