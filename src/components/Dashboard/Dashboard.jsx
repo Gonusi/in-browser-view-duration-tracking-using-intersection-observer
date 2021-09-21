@@ -1,6 +1,11 @@
 import styles from "./Dashboard.module.scss";
 
-const Dashboard = ({ itemsByViewDuration, minViewDurationMs }) => {
+const Dashboard = ({
+	itemsByViewDuration,
+	minViewDurationMs,
+	isTrackingEnabled,
+	setIsTrackingEnabled,
+}) => {
 	const handleClick = (id) => {
 		document.getElementById(id).scrollIntoView();
 	};
@@ -28,6 +33,11 @@ const Dashboard = ({ itemsByViewDuration, minViewDurationMs }) => {
 			</div>
 			<div className={styles.minTrackedViewDuration}>
 				Min. tracked duration: {minViewDurationMs / 1000}s
+			</div>
+			<div className={styles.buttonContainer}>
+				<button onClick={() => setIsTrackingEnabled(!isTrackingEnabled)}>
+					{isTrackingEnabled ? "Pause tracking" : "Continue tracking"}
+				</button>
 			</div>
 		</>
 	);
